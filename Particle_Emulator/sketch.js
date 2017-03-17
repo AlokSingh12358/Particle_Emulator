@@ -56,12 +56,12 @@ function wall()
 }
 function bubble()
 {
-  this.accx=((float(inpax.value()))+0.0)/10;
-  this.accy=((float(inpay.value()))+0.0)/10*(-1);
+  this.accx=(float(inpax.value()))/10;
+  this.accy=(float(inpay.value()))/10*(-1);
   this.x=mouseX;
   this.y=mouseY;
-  this.spx=((inpvx.value())+0.0)/10;
-  this.spy=((inpvy.value())+0.0)/10*(-1);
+  this.spx=(inpvx.value())/10;
+  this.spy=(inpvy.value())/10*(-1);
   this.mass=int(inpm.value());
   
   this.move=function()
